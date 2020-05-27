@@ -68,4 +68,4 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    &ensp;&ensp; **3.1. 接口地址** <br/>
    | 地址类型   |      地址      |
    |----------|:-------------:|
-   | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置通知地址必须以http(s)://开头正确示例：http(s)://www.XXX.com/recharge 错误示例：www.XXX.com/recharge注：回调地址中不能存在&符号 |
+   | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置<br/>通知地址必须以http(s)://开头<br/>正确示例：http(s)://www.XXX.com/recharge <br/>错误示例：www.XXX.com/recharge<br/>注：回调地址中不能存在&符号 |
