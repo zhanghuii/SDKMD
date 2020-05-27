@@ -90,3 +90,16 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    | amount |  string |  Y |  充值金额（单位：分），发货前金额需要验证 |
    | pay_result |  string |  Y |  支付结果：1.成功 2 失败 |
    | sign |  string |  Y |  签名 |
+   
+   &ensp;&ensp; **3.4. 签名方式** <br/>
+   &ensp;&ensp;&ensp;&ensp;除去sign,并且为空（null）的值不参与拼串，按键值排序拼串，然后拼接&{pay_key}，和登陆的签名类似
+   
+   &ensp;&ensp; **3.5. 返回值** <br/>
+   &ensp;&ensp;&ensp;&ensp;CP方接收回调后，返回SUCCESS(大写,不带引号，前后不能带空格)表示成功，其余例如FAIL表示失败！
+   
+   &ensp;&ensp; **3.6. 发货接口说明** <br/>
+     &ensp;&ensp;&ensp;&ensp;1.SDK服务端系统订单会在支付完成之后实时通知到CP发货接口
+     &ensp;&ensp;&ensp;&ensp;2.SDK服务端系统通知CP发货时，若未收到CP接口成功回复，该订单将重复通知3次。
+     &ensp;&ensp;&ensp;&ensp;3.SDK服务端行在3次重复通知CP发货的过程中，都未收到CP的成功回复，订单将进入后台轮询通知发货。
+     &ensp;&ensp;&ensp;&ensp;4.SDK服务端系统若收到CP接口返回成功（SUCCESS）,将不再对该笔订单做重复通知。
+     &ensp;&ensp;&ensp;&ensp;5.SDK服务端系统若对某笔订单重复通知，则CP需自行判断是否已经发货，若已发货，则直接返回成功（SUCCESS）,当做成功处理。
