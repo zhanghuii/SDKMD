@@ -31,4 +31,8 @@
         &ensp;&ensp;&ensp;&ensp;4. 本文档设计的技术均采用主流的Web开发技术，相关技术（如JSON）若不清楚，		可通过互联网搜索即可了解，本文档不做单独解释。<br/>
         &ensp;&ensp;&ensp;&ensp;5. 文档所有接口仅支持POST方式,返回信息全部为json结构<br/>
         
-   <h3 id="checklogin" style="display:none;"> 1.登录验证 </h3> 
+   <h3 id="checklogin" style="display:none;"> 2.登录验证 </h3> 
+   &ensp;&ensp;2.1. 登录地址<br/>
+   地址类型  | 地址
+   ------------- | -------------
+   正式地址  | https://lzapi.lezhonggame.com/login/AuthToken
