@@ -33,6 +33,8 @@
         
    <h3 id="checklogin" style="display:none;"> 2.登录验证 </h3> 
    &ensp;&ensp;2.1. 登录地址<br/>
-   地址类型  | 地址
-   ------------- | -------------
-   正式地址  | https://lzapi.lezhonggame.com/login/AuthToken
+   | Tables   |      Are      |  Cool |
+   |----------|:-------------:|------:|
+   | col 1 is |  left-aligned | $1600 |
+   | col 2 is |    centered   |   $12 |
+   | col 3 is | right-aligned |    $1 |
