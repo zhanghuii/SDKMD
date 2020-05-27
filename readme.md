@@ -46,10 +46,10 @@
    &ensp;&ensp; **2.3. 请求参数** <br/>
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
-   | channel_pkg_num |  Int |  Y |  渠道ID |
-   | token |  String |  Y |  客户端SDK返回的验证口令 |
-   | time |  Int |  Y |  当前时间 |
-   | sign |  String |  Y |  签名 |
+   | channel_pkg_num |  int |  Y |  渠道ID |
+   | token |  string |  Y |  客户端SDK返回的验证口令 |
+   | time |  int |  Y |  当前时间 |
+   | sign |  string |  Y |  签名 |
    
    &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
    
@@ -60,8 +60,8 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
   &ensp;&ensp; **2.5. 返回值** <br/>
   | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
-   | code |  Int |  Y |  状态码 0为成功，其它标识失败 |
-   | msg |  String |  Y |  code=0，返回账号信息，例如{"uid":"VPH59531C692B132"}code不为0时，返回纯字符串，例如验签错误： sign error! |
+   | code |  int |  Y |  状态码 0为成功，其它标识失败 |
+   | msg |  string |  Y |  code=0，返回账号信息，例如{"uid":"VPH59531C692B132"}code不为0时，返回纯字符串，例如验签错误： sign error! |
    
    <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
    
@@ -69,3 +69,24 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    | 地址类型   |      地址      |
    |----------|:-------------:|
    | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置<br/>通知地址必须以http(s)://开头<br/>正确示例：https://www.XXX.com/recharge <br/>错误示例：www.XXX.com/recharge<br/>***注：回调地址中不能存在&符号***</span> |
+   
+   &ensp;&ensp; **3.2. 请求方式** <br/>
+   &ensp;&ensp; &ensp;&ensp;**POST**<br/>
+   
+   &ensp;&ensp; **3.3. 请求参数** <br/>
+   | 参数名   |      参数规格      | 必填   |      说明      |
+   |----------|:-------------:|:-------------:|:-------------:|
+   | channel_pkg_num |  int |  Y |  渠道ID |
+   | my_order_num |  string |  Y |  LZ订单号 |
+   | cp_order_num |  string |  Y |  CP订单号 |
+   | extra |  string |  Y |  透传参数,CP未传，则以空字符串加密，不要使用json格式，建议使用param1_param2_param3，以下划线分隔的字符串 |
+   | role_id |  string |  Y |  角色ID |
+   | role_name |  string |  Y |  角色名 |
+   | product_num |  string |  Y |  产品ID 如果是通过此字段来确定发货，注意要较验对应的金额 |
+   | product_name |  string |  Y |  产品名称 |
+   | server_id |  string |  Y |  服务器ID |
+   | server_name |  string |  Y |  服务器名称 |
+   | currency |  string |  Y |  币种：RMB: 人民币USD:  美元TWD: 台币THB : 泰铢...... |
+   | amount |  string |  Y |  充值金额（单位：分），发货前金额需要验证 |
+   | pay_result |  string |  Y |  支付结果：1.成功 2 失败 |
+   | sign |  string |  Y |  签名 |
