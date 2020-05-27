@@ -39,5 +39,8 @@
    | 正式地址 |  https://lzapi.lezhonggame.com/login/AuthToken |
    
    &ensp;&ensp;2.2. 请求方式<br/>
-   &ensp;&ensp; &ensp;&ensp;**POST**
-   
+   &ensp;&ensp; &ensp;&ensp;**POST**<br/>
+   &ensp;&ensp;2.3. 请求参数<br/>
+   | 参数名   |      参数规格      | 必填   |      说明      |
+   |----------|:-------------:|:-------------:|:-------------:|
+   | channel_pkg_num |  Int |  Y |  渠道ID |
