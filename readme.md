@@ -103,3 +103,19 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
      &ensp;&ensp;&ensp;&ensp;3.SDK服务端行在3次重复通知CP发货的过程中，都未收到CP的成功回复，订单将进入后台轮询通知发货。<br/>
      &ensp;&ensp;&ensp;&ensp;4.SDK服务端系统若收到CP接口返回成功（SUCCESS）,将不再对该笔订单做重复通知。<br/>
      &ensp;&ensp;&ensp;&ensp;5.SDK服务端系统若对某笔订单重复通知，则CP需自行判断是否已经发货，若已发货，则直接返回成功（SUCCESS）,当做成功处理。<br/>
+     
+   <h3 id="paynotice" style="display:none;"> 4.附录 </h3>
+   &ensp;&ensp; **4.1.加密算法示例** <br/>
+   `function getSign($param, $key)
+    {
+        $str = '';
+        ksort($param);
+        foreach($param as $k => $v)
+        {
+          if (is_null($v))
+            continue;
+           $str .= $k . '=' . urlencode($v) . '&';
+        }
+        return md5($str .  $key);
+    }`
+   
