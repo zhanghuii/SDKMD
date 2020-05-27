@@ -20,3 +20,5 @@
 
   - [4.附录](#appendix)
       - [4.1加密算法示例（php）](#phpcode)
+      
+  <h2 id="introduce" style="display:none;"> 简介 </h2> 
