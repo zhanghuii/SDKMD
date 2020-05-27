@@ -1,10 +1,10 @@
 ## 乐众移动游戏SDK服务端接入协议
   - [1.简介](#introduce) 
-  - [1.1介绍](#introduce)
-  - [1.2声明](#announce)
+      - [1.1介绍](#introduce)
+      - [1.2声明](#announce)
 
   - [2.登录验证](#checklogin)
-  - [2.1接口地址](#loginapiurl)
+      - [2.1接口地址](#loginapiurl)
 #### 2.2请求参数
 #### 2.3签名方式
 #### 2.4返回值
