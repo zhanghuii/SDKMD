@@ -117,5 +117,6 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
            $str .= $k . '=' . urlencode($v) . '&';
         }
         return md5($str .  $key);
-    }```
+    }
+    ```
    
