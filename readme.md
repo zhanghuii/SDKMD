@@ -1,7 +1,7 @@
 ## 乐众移动游戏SDK服务端接入协议
   - [1.简介](#introduce) 
-      - [1.1介绍](#)
-      - [1.2声明](#)
+      - [1.1介绍](#intro1)
+      - [1.2声明](#intro2)
 
   - [2.登录验证](#checklogin)
       - [2.1接口地址](#loginapiurl)
@@ -23,9 +23,9 @@
       
   <h3 id="introduce" style="display:none;"> 1.简介 </h3> 
   
-   &ensp;&ensp; **1.1. 介绍** <br/>
+   <h4 id="intro1" style="display:none;"> 1.1 介绍 </h4>
         &ensp;&ensp;&ensp;&ensp;本文档提供用户登录会话接口说明，CP接收发货通知说明<br/>
-   &ensp;&ensp; **1.2. 声明** <br/>
+   <h4 id="intro2" style="display:none;"> 1.2 声明 </h4>
         &ensp;&ensp;&ensp;&ensp;1. 接口文档中涉及的APP_ID、渠道ID,APP_KEY、PAY_KEY,需要CP方向我方申请，由于涉及到加密通信，CP	方必须严格对参数进行保密。<br/>
         &ensp;&ensp;&ensp;&ensp;2. 接口文档中所有的签名编码为UTF-8,且加密结果均转换为小写字符。<br/>
         &ensp;&ensp;&ensp;&ensp;3. 只允许申请的CP方使用，严禁CP方做二次开发提供给未授权方使用。如发现违反以上声明，将追究擅自使用人的责任<br/>
