@@ -22,9 +22,9 @@
       - [4.1加密算法示例（php）](#phpcode)
       
   <h3 id="introduce" style="display:none;"> 1.简介 </h3> 
-  &ensp;&ensp;1.1. 介绍<br/>
+  &ensp;&ensp;**1.1. 介绍**<br/>
         &ensp;&ensp;&ensp;&ensp;本文档提供用户登录会话接口说明，CP接收发货通知说明<br/>
-  &ensp;&ensp;1.2. 声明<br/>
+  &ensp;&ensp;**1.2. 声明**<br/>
         &ensp;&ensp;&ensp;&ensp;1. 接口文档中涉及的APP_ID、渠道ID,APP_KEY、PAY_KEY,需要CP方向我方申请，由于涉及到加密通信，CP	方必须严格对参数进行保密。<br/>
         &ensp;&ensp;&ensp;&ensp;2. 接口文档中所有的签名编码为UTF-8,且加密结果均转换为小写字符。<br/>
         &ensp;&ensp;&ensp;&ensp;3. 只允许申请的CP方使用，严禁CP方做二次开发提供给未授权方使用。如发现违反以上声明，将追究擅自使用人的责任<br/>
@@ -32,16 +32,16 @@
         &ensp;&ensp;&ensp;&ensp;5. 文档所有接口仅支持POST方式,返回信息全部为json结构<br/>
         
    <h3 id="checklogin" style="display:none;"> 2.登录验证 </h3> 
-   &ensp;&ensp;2.1. 登录地址<br/>
+   &ensp;&ensp;**2.1. 登录地址**<br/>
    
    | 地址类型   |      地址      |
    |----------|:-------------:|
    | 正式地址 |  https://lzapi.lezhonggame.com/login/AuthToken |
    
-   &ensp;&ensp;2.2. 请求方式<br/>
+   &ensp;&ensp;**2.2. 请求方式**<br/>
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
-   &ensp;&ensp;2.3. 请求参数<br/>
+   &ensp;&ensp;**2.3. 请求参数**<br/>
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | channel_pkg_num |  Int |  Y |  渠道ID |
@@ -51,6 +51,6 @@
    
    &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
    
-   &ensp;&ensp;2.4. 签名方式<br/>
+   &ensp;&ensp;**2.4. 签名方式**<br/>
    &ensp;&ensp;&ensp;&ensp;除去sign,按键值排序拼串，token值要进行urlencode, 然后拼接&{app_key},例如
-md5({channel_pkg_num}=1001&{time}=1498878255&{token}=ddh24e23cdscjwe8328rs&{app_key})
+md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+时连接符
