@@ -105,7 +105,9 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
      &ensp;&ensp;&ensp;&ensp;5.SDK服务端系统若对某笔订单重复通知，则CP需自行判断是否已经发货，若已发货，则直接返回成功（SUCCESS）,当做成功处理。<br/>
      
    <h3 id="paynotice" style="display:none;"> 4.附录 </h3>
+   
    &ensp;&ensp; **4.1.加密算法示例** <br/>
+   
 ```php
 function getSign($param, $key)
 {
