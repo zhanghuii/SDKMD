@@ -41,6 +41,7 @@
    | 正式地址 |  https://lzapi.lezhonggame.com/login/AuthToken |
    
    <h4 id="loginapimethod" style="display:none;">2.2. 请求方式 </h4>
+   
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
    <h4 id="loginapiparam" style="display:none;">2.3. 请求参数 </h4>
@@ -74,6 +75,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置<br/>通知地址必须以http(s)://开头<br/>正确示例：https://www.XXX.com/recharge <br/>错误示例：www.XXX.com/recharge<br/>***注：回调地址中不能存在&符号***</span> |
    
    <h4 id="payapimethod" style="display:none;">3.2. 请求方式 </h4>
+   
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
    <h4 id="payapiparam" style="display:none;">3.3. 请求参数 </h4>
