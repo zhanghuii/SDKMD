@@ -44,6 +44,7 @@
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
    <h4 id="loginapiparam" style="display:none;">2.3. 请求参数 </h4>
+   
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | channel_pkg_num |  int |  Y |  渠道ID |
@@ -58,6 +59,7 @@
 md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+时连接符
 
   <h4 id="loginreturn" style="display:none;">2.5. 返回值 </h4>
+  
   | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | code |  int |  Y |  状态码 0为成功，其它标识失败 |
@@ -66,6 +68,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
    
    <h4 id="payapiurl" style="display:none;">3.1. 接口地址 </h4>
+   
    | 地址类型   |      地址      |
    |----------|:-------------:|
    | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置<br/>通知地址必须以http(s)://开头<br/>正确示例：https://www.XXX.com/recharge <br/>错误示例：www.XXX.com/recharge<br/>***注：回调地址中不能存在&符号***</span> |
@@ -74,6 +77,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
    <h4 id="payapiparam" style="display:none;">3.3. 请求参数 </h4>
+   
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | channel_pkg_num |  int |  Y |  渠道ID |
