@@ -47,3 +47,4 @@
    | token |  String |  Y |  客户端SDK返回的验证口令 |
    | time |  Int |  Y |  当前时间 |
    | sign |  String |  Y |  签名 |
+   &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
