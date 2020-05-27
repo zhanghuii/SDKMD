@@ -30,3 +30,5 @@
         &ensp;&ensp;&ensp;&ensp;3. 只允许申请的CP方使用，严禁CP方做二次开发提供给未授权方使用。如发现违反以上声明，将追究擅自使用人的责任<br/>
         &ensp;&ensp;&ensp;&ensp;4. 本文档设计的技术均采用主流的Web开发技术，相关技术（如JSON）若不清楚，		可通过互联网搜索即可了解，本文档不做单独解释。<br/>
         &ensp;&ensp;&ensp;&ensp;5. 文档所有接口仅支持POST方式,返回信息全部为json结构<br/>
+        
+   <h3 id="checklogin" style="display:none;"> 1.登录验证 </h3> 
