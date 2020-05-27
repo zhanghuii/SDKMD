@@ -16,7 +16,6 @@
       - [3.3请求参数](#payapiparam)
       - [3.4签名方式](#paysignmethod)
       - [3.5返回值](#payreturn)
-      - [3.6签名方式](#paysignmenthod)
       - [3.6发货接口说明](#paynoticeintro)
 
   - [4.附录](#appendix)
