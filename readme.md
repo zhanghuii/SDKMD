@@ -56,3 +56,10 @@
    &ensp;&ensp; **2.4. 签名方式** <br/>
    &ensp;&ensp;&ensp;&ensp;除去sign,按键值排序拼串，token值要进行urlencode, 然后拼接&{app_key},例如
 md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+时连接符
+
+  &ensp;&ensp; **2.5. 返回值** <br/>
+  | 参数名   |      参数规格      | 必填   |      说明      |
+   |----------|:-------------:|:-------------:|:-------------:|
+   | code |  Int |  Y |  状态码 0为成功，其它标识失败 |
+   | msg |  String |  Y |  code=0，返回账号信息，例如{"uid":"VPH59531C692B132"}
+code不为0时，返回纯字符串，例如验签错误： sign error! |
