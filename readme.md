@@ -98,8 +98,8 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    &ensp;&ensp;&ensp;&ensp;CP方接收回调后，返回SUCCESS(大写,不带引号，前后不能带空格)表示成功，其余例如FAIL表示失败！
    
    &ensp;&ensp; **3.6. 发货接口说明** <br/>
-     &ensp;&ensp;&ensp;&ensp;1.SDK服务端系统订单会在支付完成之后实时通知到CP发货接口
-     &ensp;&ensp;&ensp;&ensp;2.SDK服务端系统通知CP发货时，若未收到CP接口成功回复，该订单将重复通知3次。
-     &ensp;&ensp;&ensp;&ensp;3.SDK服务端行在3次重复通知CP发货的过程中，都未收到CP的成功回复，订单将进入后台轮询通知发货。
-     &ensp;&ensp;&ensp;&ensp;4.SDK服务端系统若收到CP接口返回成功（SUCCESS）,将不再对该笔订单做重复通知。
-     &ensp;&ensp;&ensp;&ensp;5.SDK服务端系统若对某笔订单重复通知，则CP需自行判断是否已经发货，若已发货，则直接返回成功（SUCCESS）,当做成功处理。
+     &ensp;&ensp;&ensp;&ensp;1.SDK服务端系统订单会在支付完成之后实时通知到CP发货接口<br/>
+     &ensp;&ensp;&ensp;&ensp;2.SDK服务端系统通知CP发货时，若未收到CP接口成功回复，该订单将重复通知3次。<br/>
+     &ensp;&ensp;&ensp;&ensp;3.SDK服务端行在3次重复通知CP发货的过程中，都未收到CP的成功回复，订单将进入后台轮询通知发货。<br/>
+     &ensp;&ensp;&ensp;&ensp;4.SDK服务端系统若收到CP接口返回成功（SUCCESS）,将不再对该笔订单做重复通知。<br/>
+     &ensp;&ensp;&ensp;&ensp;5.SDK服务端系统若对某笔订单重复通知，则CP需自行判断是否已经发货，若已发货，则直接返回成功（SUCCESS）,当做成功处理。<br/>
