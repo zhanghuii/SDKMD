@@ -62,3 +62,13 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    |----------|:-------------:|:-------------:|:-------------:|
    | code |  Int |  Y |  状态码 0为成功，其它标识失败 |
    | msg |  String |  Y |  code=0，返回账号信息，例如{"uid":"VPH59531C692B132"}code不为0时，返回纯字符串，例如验签错误： sign error! |
+   
+   <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
+   
+   &ensp;&ensp; **3.1. 接口地址** <br/>
+   | 地址类型   |      地址      |
+   |----------|:-------------:|
+   | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置通知地址必须以http(s)://开头
+                正确示例：http(s)://www.XXX.com/recharge
+                错误示例：www.XXX.com/recharge
+                注：回调地址中不能存在&符号 |
