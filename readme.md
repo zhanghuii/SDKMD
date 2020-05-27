@@ -1,6 +1,6 @@
 ## 乐众移动游戏SDK服务端接入协议
   - [1.简介](#introduce) 
-      - [1.1介绍](#introduce)
+      - [1.1介绍](#intro)
       - [1.2声明](#announce)
 
   - [2.登录验证](#checklogin)
@@ -23,7 +23,7 @@
       
   <h3 id="introduce" style="display:none;"> 1.简介 </h3> 
   
-  &ensp;&ensp; **1.1. 介绍** <br/>
+  <h5 id="intro" style="display:none;"> 1.1. 介绍 </h5> 
         &ensp;&ensp;&ensp;&ensp;本文档提供用户登录会话接口说明，CP接收发货通知说明<br/>
   &ensp;&ensp; **1.2. 声明** <br/>
         &ensp;&ensp;&ensp;&ensp;1. 接口文档中涉及的APP_ID、渠道ID,APP_KEY、PAY_KEY,需要CP方向我方申请，由于涉及到加密通信，CP	方必须严格对参数进行保密。<br/>
