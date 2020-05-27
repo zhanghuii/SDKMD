@@ -40,6 +40,7 @@
    
    &ensp;&ensp;2.2. 请求方式<br/>
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
+   
    &ensp;&ensp;2.3. 请求参数<br/>
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
@@ -49,3 +50,7 @@
    | sign |  String |  Y |  签名 |
    
    &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
+   
+   &ensp;&ensp;2.4. 签名方式<br/>
+   &ensp;&ensp;&ensp;&ensp;除去sign,按键值排序拼串，token值要进行urlencode, 然后拼接&{app_key},例如
+md5({channel_pkg_num}=1001&{time}=1498878255&{token}=ddh24e23cdscjwe8328rs&{app_key})
