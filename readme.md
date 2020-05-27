@@ -34,16 +34,16 @@
         
    <h3 id="checklogin" style="display:none;"> 2.登录验证 </h3> 
 
-   &ensp;&ensp; **2.1. 登录地址** <br/>
+   <h4 id="loginapiurl" style="display:none;"> 2.1. 登录地址 </h4>
    
    | 地址类型   |      地址      |
    |----------|:-------------:|
    | 正式地址 |  https://lzapi.lezhonggame.com/login/AuthToken |
    
-   &ensp;&ensp; **2.2. 请求方式** <br/>
+   <h4 id="loginapimethod" style="display:none;">2.2. 请求方式 </h4>
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
-   &ensp;&ensp; **2.3. 请求参数** <br/>
+   <h4 id="loginapiparam" style="display:none;">2.3. 请求参数 </h4>
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | channel_pkg_num |  int |  Y |  渠道ID |
@@ -53,11 +53,11 @@
    
    &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
    
-   &ensp;&ensp; **2.4. 签名方式** <br/>
+   <h4 id="loginsignmethod" style="display:none;">2.4. 签名方式 </h4>
    &ensp;&ensp;&ensp;&ensp;除去sign,按键值排序拼串，token值要进行urlencode, 然后拼接&{app_key},例如
 md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+时连接符
 
-  &ensp;&ensp; **2.5. 返回值** <br/>
+  <h4 id="loginreturn" style="display:none;">2.5. 返回值 </h4>
   | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | code |  int |  Y |  状态码 0为成功，其它标识失败 |
@@ -65,15 +65,15 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    
    <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
    
-   &ensp;&ensp; **3.1. 接口地址** <br/>
+   <h4 id="payapiurl" style="display:none;">3.1. 接口地址 </h4>
    | 地址类型   |      地址      |
    |----------|:-------------:|
    | 正式地址 |  由我方后台配置或CP客户端传入SDK客户端，优先我方后台配置<br/>通知地址必须以http(s)://开头<br/>正确示例：https://www.XXX.com/recharge <br/>错误示例：www.XXX.com/recharge<br/>***注：回调地址中不能存在&符号***</span> |
    
-   &ensp;&ensp; **3.2. 请求方式** <br/>
+   <h4 id="payapimethod" style="display:none;">3.2. 请求方式 </h4>
    &ensp;&ensp; &ensp;&ensp;**POST**<br/>
    
-   &ensp;&ensp; **3.3. 请求参数** <br/>
+   <h4 id="payapiparam" style="display:none;">3.3. 请求参数 </h4>
    | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | channel_pkg_num |  int |  Y |  渠道ID |
@@ -91,13 +91,13 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    | pay_result |  string |  Y |  支付结果：1.成功 2 失败 |
    | sign |  string |  Y |  签名 |
    
-   &ensp;&ensp; **3.4. 签名方式** <br/>
+   <h4 id="paysignmethod" style="display:none;">3.4. 签名方式 </h4>
    &ensp;&ensp;&ensp;&ensp;除去sign,并且为空（null）的值不参与拼串，按键值排序拼串，然后拼接&{pay_key}，和登陆的签名类似
    
-   &ensp;&ensp; **3.5. 返回值** <br/>
+   <h4 id="payreturn" style="display:none;">3.5. 返回值 </h4>
    &ensp;&ensp;&ensp;&ensp;CP方接收回调后，返回SUCCESS(大写,不带引号，前后不能带空格)表示成功，其余例如FAIL表示失败！
    
-   &ensp;&ensp; **3.6. 发货接口说明** <br/>
+   <h4 id="paynoticeintro" style="display:none;">3.6. 发货接口说明 </h4>
      &ensp;&ensp;&ensp;&ensp;1.SDK服务端系统订单会在支付完成之后实时通知到CP发货接口<br/>
      &ensp;&ensp;&ensp;&ensp;2.SDK服务端系统通知CP发货时，若未收到CP接口成功回复，该订单将重复通知3次。<br/>
      &ensp;&ensp;&ensp;&ensp;3.SDK服务端行在3次重复通知CP发货的过程中，都未收到CP的成功回复，订单将进入后台轮询通知发货。<br/>
@@ -106,7 +106,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
      
    <h3 id="appendix" style="display:none;"> 4.附录 </h3>
    
-   &ensp;&ensp; **4.1.加密算法示例** <br/>
+   <h4 id="phpcode" style="display:none;">4.1.加密算法示例 </h4>
    
 ```php
 function getSign($param, $key)
