@@ -106,7 +106,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
      
    <h3 id="paynotice" style="display:none;"> 4.附录 </h3>
    &ensp;&ensp; **4.1.加密算法示例** <br/>
-    ```php
+    '''php
         function getSign($param, $key)
         {
             $str = '';
@@ -119,5 +119,5 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
             }
             return md5($str .  $key);
         }
-   ```
+   '''
    
