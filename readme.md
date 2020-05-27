@@ -39,5 +39,5 @@
    | 正式地址 |  https://lzapi.lezhonggame.com/login/AuthToken |
    
    &ensp;&ensp;2.2. 请求方式<br/>
-   &ensp;&ensp; &ensp;&ensp;<h3> POST </h3>
+   &ensp;&ensp; &ensp;&ensp;<h5> POST </h5>
    
