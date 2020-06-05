@@ -66,6 +66,12 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
    | code |  int |  Y |  状态码 0为成功，其它标识失败 |
    | msg |  string |  Y |  code=0，返回账号信息，例如{"uid":"80000000240","channel_id":3,"sdk_uid":"20396935"},code不为0时，返回纯字符串，例如验签错误： sign error! |
    
+&emsp;&emsp;**说明**
+&emsp;&emsp;&emsp;&emsp;uid:CP作为用户标识,存字符串
+&emsp;&emsp;&emsp;&emsp;channel_id:子渠道ID
+&emsp;&emsp;&emsp;&emsp;sdk_uid:渠道用户标识（注意：这是子渠道的用户标识，CP可记录，切不可把此值作为用户标识）
+   
+   
    <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
    
    <h4 id="payapiurl" style="display:none;">3.1. 接口地址 </h4>
