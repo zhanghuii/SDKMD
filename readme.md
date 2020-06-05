@@ -56,8 +56,8 @@
    &ensp;&ensp; &ensp;&ensp; ***注意：以上字段请求时，都无需urlencode***
    
    <h4 id="loginsignmethod" style="display:none;">2.4. 签名方式 </h4>
-   &ensp;&ensp;&ensp;&ensp;除去sign,按键值排序拼串，token值要进行urlencode, 然后拼接&{app_key},例如
-md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+时连接符
+   &ensp;&ensp;&ensp;&ensp;除去sign，按键值排序拼串，token值要进行urlencode，然后拼接&{app_key}，例如
+md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {app_key}),其中+是连接符
 
   <h4 id="loginreturn" style="display:none;">2.5. 返回值 </h4>
   
