@@ -64,7 +64,7 @@ md5("channel_pkg_num=88001&time=1498878255&token=ddh24e23cdscjwe8fdse328rs&" + {
   | 参数名   |      参数规格      | 必填   |      说明      |
    |----------|:-------------:|:-------------:|:-------------:|
    | code |  int |  Y |  状态码 0为成功，其它标识失败 |
-   | msg |  string |  Y |  code=0，返回账号信息，例如{"uid":"VPH59531C692B132"}code不为0时，返回纯字符串，例如验签错误： sign error! |
+   | msg |  string |  Y |  code=0，返回账号信息，例如{"uid":"80000000240","channel_id":3,"sdk_uid":"20396935"},code不为0时，返回纯字符串，例如验签错误： sign error! |
    
    <h3 id="paynotice" style="display:none;"> 3.发货通知 </h3>
    
